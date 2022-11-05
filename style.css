@@ -61,7 +61,21 @@ nav{
     padding: 30px;
 }
 
-.logo{
+.logo-link {
+    color: var(--clr-neutral);
+    background-color: var(--clr-neutral-lightest);
+    font-size: 30px;
+    text-overflow: inherit;
+    text-decoration: none;
+    transition: all 250ms ease;
+    font-weight: var(--fw-bold);
+}
+
+.logo-link:hover {
+    transform: scale(1.15);
+}
+
+.logo h2{
     font-weight: var(--fw-bold);
     font-size: 30px;
 }
@@ -77,20 +91,20 @@ nav ul {
     padding-left: 450px;
 }
 
-nav ul li a{
+nav > ul > li > a{
     text-decoration: none;
     color: var(--clr-neutral);
     transition: all 250ms ease-in-out;
     padding: 10px 15px;
 }
 
-nav ul li a:hover {
+nav > ul > li > a:hover {
     color: var(--clr-bg);
     background-color: var(--clr-primary);
     border-radius: 100vh;
 }
 
-nav > a {
+.nav-btn {
     text-decoration: none;
     color: var(--clr-bg);
     transition: all 250ms ease-in-out;
@@ -99,7 +113,7 @@ nav > a {
     border-radius: 100vh;
 }
 
-nav > a:hover{
+.nav-btn:hover{
     background-color: var(--clr-neutral);
     color: var(--clr-neutral-lightest);
 }
@@ -140,3 +154,27 @@ nav > a:hover{
     font-size: 18px;
     padding-left: 20px;
 }
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--clr-neutral);
+    display: flex;
+    align-items: center;
+    color: var(--clr-bg);
+    overflow: hidden;
+  }
+
+  .logo-link-footer {
+    color: var(--clr-bg);
+    font-size: 30px;
+    text-overflow: inherit;
+    text-decoration: none;
+    transition: all 250ms ease;
+    font-weight: var(--fw-bold);
+  }
+
+  .footer-sec-1 {
+    width: 35ch;
+  }

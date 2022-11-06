@@ -157,24 +157,124 @@ nav > ul > li > a:hover {
 
 /* Footer */
 
-footer {
+.footer-container {
     width: 100%;
     background-color: var(--clr-neutral);
     display: flex;
     align-items: center;
     color: var(--clr-bg);
     overflow: hidden;
-  }
+    gap: 8rem;
+    border-top-left-radius: 100px;
+}
 
-  .logo-link-footer {
-    color: var(--clr-bg);
-    font-size: 30px;
-    text-overflow: inherit;
+.logo-link-footer {
+   color: var(--clr-bg);
+   font-size: 30px;
+   text-overflow: inherit;
+   text-decoration: none;
+   transition: all 250ms ease;
+   font-weight: var(--fw-bold);
+}
+
+.footer-sec-1 {
+   width: 35ch;
+   margin: 20px;
+   margin-left: 30px;
+}
+
+.footer-sec-2 {
+    width: fit-content;
+    padding-top: 20px;
+    line-height: 1.7;
+    padding-bottom: 20px;
+}
+
+.footer-sec-2 h3 {
+    font-size: 20px;
+}
+
+.footer-sec-2 ul {
+    list-style: none;
+}
+
+.footer-sec-2 ul li a{
     text-decoration: none;
+    color: var(--clr-neutral-ligt);
     transition: all 250ms ease;
-    font-weight: var(--fw-bold);
-  }
+}
 
-  .footer-sec-1 {
-    width: 35ch;
-  }
+.footer-sec-2 ul li a:hover {
+    color: var(--clr-bg);
+    transform: scale(1.1);
+}
+
+.footer-sec-3 {
+    width: fit-content;
+    margin-top: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer-sec-3 h3 {
+    font-size: 20px;
+}
+
+.footer-sec-3 ul {
+    list-style: none;
+}
+
+.footer-sec-3 ul li a{
+    text-decoration: none;
+    color: var(--clr-neutral-ligt);
+    transition: all 250ms ease;
+}
+
+.footer-sec-3 ul li a:hover {
+    color: var(--clr-bg);
+    transform: scale(1.1);
+}
+
+.footer-sec-4 h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .7rem;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--clr-bg);
+}
+
+footer input{
+    border: none;
+    background: transparent;
+    color: var(--clr-bg);
+    outline: none;
+}
+
+footer button{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--clr-bg);
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+footer button:hover {
+    transform: scale(1.1);
+}
+
+footer > p{
+    background-color: var(--clr-neutral-ligt);
+    color: var(--clr-bg);
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
